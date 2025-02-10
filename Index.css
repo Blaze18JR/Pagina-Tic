@@ -2,7 +2,7 @@ h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0 0 10px rgb(255, 0, 0);
-  font-size: 80px;
+  font-size: 120px;
 }
 h2 {
   color: rgb(255, 255, 255);
@@ -28,7 +28,7 @@ a {
 }
 p {
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px blue;
+  text-shadow: 0 0 10px rgb(60, 255, 0);
   font-size: 30px;
 }
 body {
@@ -50,6 +50,6 @@ header {
 }
 li {
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px blue;
+  text-shadow: 0 0 10px rgb(60, 255, 0);
   font-size: 30px;
 }
