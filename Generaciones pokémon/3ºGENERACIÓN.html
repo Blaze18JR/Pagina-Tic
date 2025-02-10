@@ -32,8 +32,98 @@ li {
   text-shadow: 0 0 10px rgb(60, 255, 0);
   font-size: 30px;
 }
+nav ul {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    nav ul li {
+      display: block;
+      background: rgb(0, 0, 0);
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid grey;
+      width: 150px;
+      text-shadow: none;
+    }
+
+    nav ul {
+      position: absolute;
+      top: 84px;
+      width: 150px;
+      left: 0;
+    }
+
+    .izq {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li a {
+      box-shadow: none;
+      background-color: transparent;
+      color: white;
+    }
 </style>
 <body>
+  <header>
+      <div class="izq">
+        <nav>
+          <input type="checkbox" id="menu" />
+          <label for="menu"> ☰ </label>
+          <ul>
+            <li><a href="1ºGENERACIÓN.html">1ºGEN</a></li>
+            <li><a href="2ºGENERACIÓN.html">2ºGEN</a></li>
+            <li><a href="3ºGENERACIÓN.html">3ºGEN</a></li>
+            <li><a href="Spin_Offs.html"> Spin Offs</a></li>
+            <li><a href="4ºGENERACIÓN.html">4ºGEN</a></li>
+            <li><a href="5ºGENERACIÓN.html">5ºGEN</a></li>
+            <li><a href="6ºGENERACIÓN.html">6ºGEN</a></li>
+            <li><a href="7ºGENERACIÓN.html">7ºGEN</a></li>
+            <li><a href="8ºGENERACIÓN.html">8ºGEN</a></li>
+            <li><a href="9ºGENERACIÓN.html">9ºGEN</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="logo"
+        />
+      </div>
+      <h1>Pokémon e Inazuma Eleven</h1>
+      <div class="dr">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Inazuma_Eleven_logo.svg/1200px-Inazuma_Eleven_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="https://ih1.redbubble.net/image.2198658837.1467/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          alt="raimon"
+          class="raimon"
+        />
+      </div>
+    </header>
 <h2>Tercera Generacion</h2>
 <p>
     En el año 2003 hacen su aparición los juegos Pokémon Ruby y Sapphire para la consola Game Boy Advance.En estas nuevas versiones aparece una nueva región llamada Hoenn, y 135 nuevas especies de pokémon (desde Treecko hasta Deoxys), elevando el total de hasta 386 pokémon.<br>Se ha incorporado el concepto de las batallas de equipo de 2 contra 2, los concursos pokémon y los Pokéblock (Pokécubos en España), así como nuevas habilidades especiales.<br>En octubre de 2004 salieron a la venta Pokémon FireRed y LeafGreen,siendo un remake de los primeros juegos, Pokémon Red y Green. El juego se considera parte de la tercera generación debido a que los movimientos de los pokémon, objetos y el resto de características han sido incorporados.<br>En el año 2005 salió a la venta Pokémon Emerald.A diferencia de Ruby y Sapphire, en Pokémon Emerald es posible enfrentarse a los dos equipos enemigos existentes (el Equipo Aqua y el Equipo Magma), y nuevos desafíos como la Batalla de la Frontera (Battle Frontier).

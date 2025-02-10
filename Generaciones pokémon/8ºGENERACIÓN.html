@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Octava Generación</title>
-</head>
-<style>
+  </head>
+  <style>
     h3 {
       color: rgb(255, 255, 255);
       text-shadow: 0 0 10px rgb(255, 0, 0);
@@ -32,41 +32,190 @@
       text-shadow: 0 0 10px rgb(60, 255, 0);
       font-size: 30px;
     }
-</style>
-<body>
-<h2>Octava Generación</h2>
-  <p>
-     El Pokémon Direct emitido el 27 de febrero de 2019 dio a conocer los títulos de los primeros juegos de octava generación, Pokémon espada y Pokémon escudo. Durante el directo de 7 minutos se mostraron algunos lugares de la nueva región, llamada "Galar", los nuevos Pokémon iniciales, la vuelta de los clásicos gimnasios y el avance gráfico que suponen estos nuevos videojuegos.El juego será lanzado a finales de este año para la consola Nintendo Switch. Tras el reciente pokémon direct emitido el 6 de julio,se ha oficiado la fecha de salida de las nuevas ediciones de pokémon siendo el 15 de noviembre de 2019.
-  </p>
-<h3>Lista de Curiosidades</h3>
-  <ul>
-     <li>Esta generación incorpora, 98 nuevas especies de pokémon (desde Grookey hasta Enamorus) Haciendo un total de 905</li>
-     <li>en el parche 1.1.0 incorporan slowpoke forma galar</li>
-     <li>en el parche 1.1.0 incorporan slowpoke forma galar</li>
-     <li>En el parche 1.2.0 incorporan 102 pokémon haciendo un total de 537 además de tener una nueva isla explorable con el contenido descargable Isla de la armadura 22 nuevos movimientos y 2 nuevas habilidades
-     <li>En el parche 1.3.0 incorporaron 5 nuevos pokémon 8 movimientos nuevos 7 habilidades nuevas vuelven de nuevo 119 pokémon anteriormente existentes haciendo un total de 656 y finalmente una nueva zona explorable por el contenido descargable Las nieves de la corona</li>
-     <li>Es la primera generación en no incluir todos los pokémon jugables existentes en una entrega de pokémon de la saga principal</li>
-     <li>Todos los pokémon en el equipo obtienen experiencia</li>
-     <li>Los movimientos Z y las megapiedras han sido removidas y reemplazadas por las incursiones gigamax</li>
-     <li>De lo que al anime se refiere, esta generación abarca del capítulo 1088 al 1232 y está ambientado en todas las regiones existentes lo que va a suponer un reinicio en la serie animada de pokémon profundizando en muchos aspectos olvidados y que piensan implemtentar en esta serie añadiendo una capa de profundidad a la obra original.</li>
-     <li>La Vigésimo tercera temporada abarca del capítulo 1088 al 1137.</li>
-     <li>La vigésima cuarta temporada abarca del capítulo 1138 al 1179.</li>
-     <li>La vigésima quinta temporada abarca del capítulo 1180 al 1232.</li>
-     <li>La película vigésima tercera pertenece a esta generación.</li>
-     <li>Regresan las medallas de gimnasio en este videojuego haciendo un total de 10 (2 de los cuales son exclusivos y cambian dependiendo la versión a la que juegas)</li>
-     <li>151 recetas de curry muchas de las cuales son las mismas(se dividen en seco agrio picante y dulce amargo) pero con efectos diferentes</li>
-     <li>Incorporan 81 nuevos movimientos haciendo un total de 890</li>
-     <li>Incorporan 24 nuevas habilidades haciendo un total de 258</li>
-     <li>Un total de 1828 objetos (muchos de los cuales no se encuentran en el juego y otros son accesibles mediante trucos)</li>
-     <li>Los ingredientes de curry tienen su propio compartimento en la mochila</li>
-     <li>Los fósiles cuentan ya con su propio compartimento en la mochila</li>
-     <li>Los remakes de diamante y perla solamente tiene los 493 pokémon originales</li>
-     <li>El parque compi es reemplazado por el parque hansa</li>
-     <li>El subsuelo es reemplazado por el gran subsuelo</li>
-     <li>Usando el mapa y si disponemos del movimiento vuelo podremos volar por las ciudades de sinnoh</li>
-     <li>Con el lector DS (objeto clave) podemos hacer que el soundtrack de los remakes de diamante perla vuelvan a sonar como los originales</li>
-     <li>Es el primer videojuego en introducir los pases de expansión (contenido adicional)</li>
-     <li>Es el primer videojuego en introducir bonificación por partida guardada de haber jugado en juegos anteriores</li>
-  </ul>
-</body>
+    nav ul {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    nav ul li {
+      display: block;
+      background: rgb(0, 0, 0);
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid grey;
+      width: 150px;
+      text-shadow: none;
+    }
+
+    nav ul {
+      position: absolute;
+      top: 84px;
+      width: 150px;
+      left: 0;
+    }
+
+    .izq {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li a {
+      box-shadow: none;
+      background-color: transparent;
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="izq">
+        <nav>
+          <input type="checkbox" id="menu" />
+          <label for="menu"> ☰ </label>
+          <ul>
+            <li><a href="1ºGENERACIÓN.html">1ºGEN</a></li>
+            <li><a href="2ºGENERACIÓN.html">2ºGEN</a></li>
+            <li><a href="3ºGENERACIÓN.html">3ºGEN</a></li>
+            <li><a href="Spin_Offs.html"> Spin Offs</a></li>
+            <li><a href="4ºGENERACIÓN.html">4ºGEN</a></li>
+            <li><a href="5ºGENERACIÓN.html">5ºGEN</a></li>
+            <li><a href="6ºGENERACIÓN.html">6ºGEN</a></li>
+            <li><a href="7ºGENERACIÓN.html">7ºGEN</a></li>
+            <li><a href="8ºGENERACIÓN.html">8ºGEN</a></li>
+            <li><a href="9ºGENERACIÓN.html">9ºGEN</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="logo"
+        />
+      </div>
+      <h1>Pokémon e Inazuma Eleven</h1>
+      <div class="dr">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Inazuma_Eleven_logo.svg/1200px-Inazuma_Eleven_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="https://ih1.redbubble.net/image.2198658837.1467/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          alt="raimon"
+          class="raimon"
+        />
+      </div>
+    </header>
+    <h2>Octava Generación</h2>
+    <p>
+      El Pokémon Direct emitido el 27 de febrero de 2019 dio a conocer los
+      títulos de los primeros juegos de octava generación, Pokémon espada y
+      Pokémon escudo. Durante el directo de 7 minutos se mostraron algunos
+      lugares de la nueva región, llamada "Galar", los nuevos Pokémon iniciales,
+      la vuelta de los clásicos gimnasios y el avance gráfico que suponen estos
+      nuevos videojuegos.El juego será lanzado a finales de este año para la
+      consola Nintendo Switch. Tras el reciente pokémon direct emitido el 6 de
+      julio,se ha oficiado la fecha de salida de las nuevas ediciones de pokémon
+      siendo el 15 de noviembre de 2019.
+    </p>
+    <h3>Lista de Curiosidades</h3>
+    <ul>
+      <li>
+        Esta generación incorpora, 98 nuevas especies de pokémon (desde Grookey
+        hasta Enamorus) Haciendo un total de 905
+      </li>
+      <li>en el parche 1.1.0 incorporan slowpoke forma galar</li>
+      <li>en el parche 1.1.0 incorporan slowpoke forma galar</li>
+      <li>
+        En el parche 1.2.0 incorporan 102 pokémon haciendo un total de 537
+        además de tener una nueva isla explorable con el contenido descargable
+        Isla de la armadura 22 nuevos movimientos y 2 nuevas habilidades
+      </li>
+      <li>
+        En el parche 1.3.0 incorporaron 5 nuevos pokémon 8 movimientos nuevos 7
+        habilidades nuevas vuelven de nuevo 119 pokémon anteriormente existentes
+        haciendo un total de 656 y finalmente una nueva zona explorable por el
+        contenido descargable Las nieves de la corona
+      </li>
+      <li>
+        Es la primera generación en no incluir todos los pokémon jugables
+        existentes en una entrega de pokémon de la saga principal
+      </li>
+      <li>Todos los pokémon en el equipo obtienen experiencia</li>
+      <li>
+        Los movimientos Z y las megapiedras han sido removidas y reemplazadas
+        por las incursiones gigamax
+      </li>
+      <li>
+        De lo que al anime se refiere, esta generación abarca del capítulo 1088
+        al 1232 y está ambientado en todas las regiones existentes lo que va a
+        suponer un reinicio en la serie animada de pokémon profundizando en
+        muchos aspectos olvidados y que piensan implemtentar en esta serie
+        añadiendo una capa de profundidad a la obra original.
+      </li>
+      <li>La Vigésimo tercera temporada abarca del capítulo 1088 al 1137.</li>
+      <li>La vigésima cuarta temporada abarca del capítulo 1138 al 1179.</li>
+      <li>La vigésima quinta temporada abarca del capítulo 1180 al 1232.</li>
+      <li>La película vigésima tercera pertenece a esta generación.</li>
+      <li>
+        Regresan las medallas de gimnasio en este videojuego haciendo un total
+        de 10 (2 de los cuales son exclusivos y cambian dependiendo la versión a
+        la que juegas)
+      </li>
+      <li>
+        151 recetas de curry muchas de las cuales son las mismas(se dividen en
+        seco agrio picante y dulce amargo) pero con efectos diferentes
+      </li>
+      <li>Incorporan 81 nuevos movimientos haciendo un total de 890</li>
+      <li>Incorporan 24 nuevas habilidades haciendo un total de 258</li>
+      <li>
+        Un total de 1828 objetos (muchos de los cuales no se encuentran en el
+        juego y otros son accesibles mediante trucos)
+      </li>
+      <li>
+        Los ingredientes de curry tienen su propio compartimento en la mochila
+      </li>
+      <li>Los fósiles cuentan ya con su propio compartimento en la mochila</li>
+      <li>
+        Los remakes de diamante y perla solamente tiene los 493 pokémon
+        originales
+      </li>
+      <li>El parque compi es reemplazado por el parque hansa</li>
+      <li>El subsuelo es reemplazado por el gran subsuelo</li>
+      <li>
+        Usando el mapa y si disponemos del movimiento vuelo podremos volar por
+        las ciudades de sinnoh
+      </li>
+      <li>
+        Con el lector DS (objeto clave) podemos hacer que el soundtrack de los
+        remakes de diamante perla vuelvan a sonar como los originales
+      </li>
+      <li>
+        Es el primer videojuego en introducir los pases de expansión (contenido
+        adicional)
+      </li>
+      <li>
+        Es el primer videojuego en introducir bonificación por partida guardada
+        de haber jugado en juegos anteriores
+      </li>
+    </ul>
+  </body>
 </html>

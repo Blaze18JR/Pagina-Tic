@@ -1,85 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primera Generacion</title>
-</head>
-<style>
-h3 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(255, 0, 0);
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-h2 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(255, 0, 0);
-  font-size: 60px;
-  margin-bottom: 30px;
-}
-p {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(60, 250, 0);
-  font-size: 30px;
-}
-body {
-  margin: 0;
-  background-color: black;
-}
-li {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(60, 255, 0);
-  font-size: 30px;
-}
-</style>
-<body>
-  <h2>Primera Generación</h2>
-<p>
-  La historia de los videojuegos de Pokémon se inicia con los lanzamientos de
-  Pocket Monsters Aka and Midori (Red y Pokémon Green) en Japón en 1996, para la
-  consola Game Boy. Debido a la popularidad que alcanzaron estos 2 juegos, poco
-  más tarde apareció Pokémon Blue. Las versiones originales de Aka (緑) and
-  Midori nunca han salido a la venta fuera de Japón,sino que internacionalmente
-  se lanzaron Pokémon Red y Blue, videojuegos con las mejoras de Pokémon Blue,
-  pero con las características de los originales Aka y Midori.
-</p>
-<p>
-  La aventura en estas versiones transcurre en la región de Kanto, por lo que el
-  nombre de esta región suele verse asociado a estos videojuegos de la primera
-  generación.
-</p>
-<p>
-  La tercera versión (cuarta en Japón) de los primeros videojuegos de Pokémon es
-  Pokémon Yellow el cual fue lanzado el 2 de septiembre de 1998 en Japón, y en
-  Norteamérica el 1 de octubre de 1999. El argumento de este título es muy
-  cercano a la serie de anime.
-</p>
-<p>
-  Luego de esto se realizaron otras subsagas de la franquicia, como las
-  versiones Pokémon Stadium para Nintendo 64,en donde se podían ver en 3D y usar
-  a los pokémon entrenados de los juegos de RPG de Game Boy para ingresarlos al
-  juego y luchar.
-</p>
-<h3>Lista de Curiosidades</h3>
-<ul>
-  <li>Hay un total de 151 pokémon (de Bulbasaur a Mew).</li>
-  <li>Aparición de 15 tipos distintos.</li>
-  <li>Incorporan un total 165 movimientos.</li>
-  <li>Esta generación abarca del capítulo 1 al 118 del anime.</li>
-  <li>La primera temporada abarca del capítulo 1 al 84.</li>
-  <li>La segunda temporada abarca del capítulo 84 al 118.</li>
-  <li>La primera película así como la Segunda pertenecen a esta generación.</li>
-  <li>
-    Un total de 255 objetos (368 si contamos con los objetos que nos aparecieron
-    o en los que un principio estaban en fase Beta en un principio se tenían
-    pensado que las medallas fuesen alojadas a nuestra mochila y quedaron restos
-    de las medallas que forman parte del código del juego).
-  </li>
-  <li>
-    La mochila solo puede tener 20 objetos al no estar dividida (objetos clave,
-    movimientos curativos, etc).
-  </li>
-</ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primera Generacion</title>
+  </head>
+  <style>
+    h3 {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+    p {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(60, 250, 0);
+      font-size: 30px;
+    }
+    body {
+      margin: 0;
+      background-color: black;
+    }
+    li {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(60, 255, 0);
+      font-size: 30px;
+    }
+    nav ul {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    nav ul li {
+      display: block;
+      background: rgb(0, 0, 0);
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid grey;
+      width: 150px;
+      text-shadow: none;
+    }
+
+    nav ul {
+      position: absolute;
+      top: 84px;
+      width: 150px;
+      left: 0;
+    }
+
+    .izq {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li a {
+      box-shadow: none;
+      background-color: transparent;
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="izq">
+        <nav>
+          <input type="checkbox" id="menu" />
+          <label for="menu"> ☰ </label>
+          <ul>
+            <li><a href="1ºGENERACIÓN.html">1ºGEN</a></li>
+            <li><a href="2ºGENERACIÓN.html">2ºGEN</a></li>
+            <li><a href="3ºGENERACIÓN.html">3ºGEN</a></li>
+            <li><a href="Spin_Offs.html"> Spin Offs</a></li>
+            <li><a href="4ºGENERACIÓN.html">4ºGEN</a></li>
+            <li><a href="5ºGENERACIÓN.html">5ºGEN</a></li>
+            <li><a href="6ºGENERACIÓN.html">6ºGEN</a></li>
+            <li><a href="7ºGENERACIÓN.html">7ºGEN</a></li>
+            <li><a href="8ºGENERACIÓN.html">8ºGEN</a></li>
+            <li><a href="9ºGENERACIÓN.html">9ºGEN</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="logo"
+        />
+      </div>
+      <h1>Pokémon e Inazuma Eleven</h1>
+      <div class="dr">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Inazuma_Eleven_logo.svg/1200px-Inazuma_Eleven_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="https://ih1.redbubble.net/image.2198658837.1467/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          alt="raimon"
+          class="raimon"
+        />
+      </div>
+    </header>
+    <h2>Primera Generación</h2>
+    <p>
+      La historia de los videojuegos de Pokémon se inicia con los lanzamientos
+      de Pocket Monsters Aka and Midori (Red y Pokémon Green) en Japón en 1996,
+      para la consola Game Boy. Debido a la popularidad que alcanzaron estos 2
+      juegos, poco más tarde apareció Pokémon Blue. Las versiones originales de
+      Aka (緑) and Midori nunca han salido a la venta fuera de Japón,sino que
+      internacionalmente se lanzaron Pokémon Red y Blue, videojuegos con las
+      mejoras de Pokémon Blue, pero con las características de los originales
+      Aka y Midori.
+    </p>
+    <p>
+      La aventura en estas versiones transcurre en la región de Kanto, por lo
+      que el nombre de esta región suele verse asociado a estos videojuegos de
+      la primera generación.
+    </p>
+    <p>
+      La tercera versión (cuarta en Japón) de los primeros videojuegos de
+      Pokémon es Pokémon Yellow el cual fue lanzado el 2 de septiembre de 1998
+      en Japón, y en Norteamérica el 1 de octubre de 1999. El argumento de este
+      título es muy cercano a la serie de anime.
+    </p>
+    <p>
+      Luego de esto se realizaron otras subsagas de la franquicia, como las
+      versiones Pokémon Stadium para Nintendo 64,en donde se podían ver en 3D y
+      usar a los pokémon entrenados de los juegos de RPG de Game Boy para
+      ingresarlos al juego y luchar.
+    </p>
+    <h3>Lista de Curiosidades</h3>
+    <ul>
+      <li>Hay un total de 151 pokémon (de Bulbasaur a Mew).</li>
+      <li>Aparición de 15 tipos distintos.</li>
+      <li>Incorporan un total 165 movimientos.</li>
+      <li>Esta generación abarca del capítulo 1 al 118 del anime.</li>
+      <li>La primera temporada abarca del capítulo 1 al 84.</li>
+      <li>La segunda temporada abarca del capítulo 84 al 118.</li>
+      <li>
+        La primera película así como la Segunda pertenecen a esta generación.
+      </li>
+      <li>
+        Un total de 255 objetos (368 si contamos con los objetos que nos
+        aparecieron o en los que un principio estaban en fase Beta en un
+        principio se tenían pensado que las medallas fuesen alojadas a nuestra
+        mochila y quedaron restos de las medallas que forman parte del código
+        del juego).
+      </li>
+      <li>
+        La mochila solo puede tener 20 objetos al no estar dividida (objetos
+        clave, movimientos curativos, etc).
+      </li>
+    </ul>
+  </body>
 </html>

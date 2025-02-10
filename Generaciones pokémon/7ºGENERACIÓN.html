@@ -1,74 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Septima Generación</title>
-</head>
-<style>
-h3 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(255, 0, 0);
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-h2 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(255, 0, 0);
-  font-size: 60px;
-  margin-bottom: 30px;
-}
-p {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(60, 250, 0);
-  font-size: 30px;
-}
-body {
-  margin: 0;
-  background-color: black;
-}
-li {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(60, 255, 0);
-  font-size: 30px;
-}
-</style>
-<body>
-<h2>Septima Generación</h2>
+  </head>
+  <style>
+    h3 {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+    p {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(60, 250, 0);
+      font-size: 30px;
+    }
+    body {
+      margin: 0;
+      background-color: black;
+    }
+    li {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgb(60, 255, 0);
+      font-size: 30px;
+    }
+    nav ul {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    nav ul li {
+      display: block;
+      background: rgb(0, 0, 0);
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid grey;
+      width: 150px;
+      text-shadow: none;
+    }
+
+    nav ul {
+      position: absolute;
+      top: 84px;
+      width: 150px;
+      left: 0;
+    }
+
+    .izq {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    nav ul li a {
+      box-shadow: none;
+      background-color: transparent;
+      color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="izq">
+        <nav>
+          <input type="checkbox" id="menu" />
+          <label for="menu"> ☰ </label>
+          <ul>
+            <li><a href="1ºGENERACIÓN.html">1ºGEN</a></li>
+            <li><a href="2ºGENERACIÓN.html">2ºGEN</a></li>
+            <li><a href="3ºGENERACIÓN.html">3ºGEN</a></li>
+            <li><a href="Spin_Offs.html"> Spin Offs</a></li>
+            <li><a href="4ºGENERACIÓN.html">4ºGEN</a></li>
+            <li><a href="5ºGENERACIÓN.html">5ºGEN</a></li>
+            <li><a href="6ºGENERACIÓN.html">6ºGEN</a></li>
+            <li><a href="7ºGENERACIÓN.html">7ºGEN</a></li>
+            <li><a href="8ºGENERACIÓN.html">8ºGEN</a></li>
+            <li><a href="9ºGENERACIÓN.html">9ºGEN</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="logo"
+        />
+      </div>
+      <h1>Pokémon e Inazuma Eleven</h1>
+      <div class="dr">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Inazuma_Eleven_logo.svg/1200px-Inazuma_Eleven_logo.svg.png"
+          alt=""
+        />
+        <img
+          src="https://ih1.redbubble.net/image.2198658837.1467/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          alt="raimon"
+          class="raimon"
+        />
+      </div>
+    </header>
+    <h2>Septima Generación</h2>
     <p>
-         El 26 de febrero de 2016, y celebrando los 20 años de la salida del primer juego de la franquicia, fueron anunciados Pokémon Sol y Luna, que fueron lanzados el 18 de noviembre de 2016 (23 de noviembre en Europa) e iniciaron la séptima generación. Ambos juegos son compatibles con Nintendo 3DS, Nintendo 2DS, New Nintendo 3DS y New Nintendo 2DS. Fueron los primeros juegos de la franquicia en incluir los idiomas chino tradicional y chino simplificado. La región en la que transcurre la historia es "Alola", en esta ocasión se trata de un archipiélago formado por cuatro islas y una artificial. El juego está repleto de leyendas y misterios que crean un folklore de una profundidad que no se había visto anteriormente en la saga. Muchos medios catalogaron Alola como la región mejor ambientada de la franquicia, de hecho, "Sol y Luna" se llevaron ante gran variedad de medios de la crítica mundial el "galardón" de "mejor juego de la saga".
+      El 26 de febrero de 2016, y celebrando los 20 años de la salida del primer
+      juego de la franquicia, fueron anunciados Pokémon Sol y Luna, que fueron
+      lanzados el 18 de noviembre de 2016 (23 de noviembre en Europa) e
+      iniciaron la séptima generación. Ambos juegos son compatibles con Nintendo
+      3DS, Nintendo 2DS, New Nintendo 3DS y New Nintendo 2DS. Fueron los
+      primeros juegos de la franquicia en incluir los idiomas chino tradicional
+      y chino simplificado. La región en la que transcurre la historia es
+      "Alola", en esta ocasión se trata de un archipiélago formado por cuatro
+      islas y una artificial. El juego está repleto de leyendas y misterios que
+      crean un folklore de una profundidad que no se había visto anteriormente
+      en la saga. Muchos medios catalogaron Alola como la región mejor
+      ambientada de la franquicia, de hecho, "Sol y Luna" se llevaron ante gran
+      variedad de medios de la crítica mundial el "galardón" de "mejor juego de
+      la saga".
     </p>
     <p>
-         El 6 de junio de 2017, durante un "Pokémon Direct" en el que además se presentó Pokkén Tournament DX para Nintendo Switch y la versión para consola virtual de Nintendo 3DS de los clásicos Pokémon Oro y Plata, Game Freak anunció oficialmente dos nuevos títulos que continuarían la séptima generación de la franquicia, Pokémon Ultrasol y Ultraluna, los cuales salieron a la venta el 17 de noviembre de 2017 en todo el mundo. Estas nuevas ediciones son, de nuevo, jugables en todas las consolas de la familia Nintendo 3DS e incluyen nuevos Pokémon, nuevas funciones, una historia alternativa y una región de Alola redefinida con nuevas zonas, entre otras novedades.
+      El 6 de junio de 2017, durante un "Pokémon Direct" en el que además se
+      presentó Pokkén Tournament DX para Nintendo Switch y la versión para
+      consola virtual de Nintendo 3DS de los clásicos Pokémon Oro y Plata, Game
+      Freak anunció oficialmente dos nuevos títulos que continuarían la séptima
+      generación de la franquicia, Pokémon Ultrasol y Ultraluna, los cuales
+      salieron a la venta el 17 de noviembre de 2017 en todo el mundo. Estas
+      nuevas ediciones son, de nuevo, jugables en todas las consolas de la
+      familia Nintendo 3DS e incluyen nuevos Pokémon, nuevas funciones, una
+      historia alternativa y una región de Alola redefinida con nuevas zonas,
+      entre otras novedades.
     </p>
     <p>
-         Fue también durante esta generación en la que, en verano de 2016, ocurrió el boom ocasionado por la salida de la famosa aplicación de móviles Pokémon GO, hecho que propulsó las   ventas de Pokémon Sol y Luna, que fueron los juegos que más rápido vendieron sus copias en la vida de la consola Nintendo 3DS en su primera semana y recaudaron más de 15 millones de ventas en tan solo su primer año (dato que a Pokémon X e Y, primer juego de la anterior generación, le costó casi 4 años alcanzar). Game Freak, vio una gran oportunidad en esto y decidió aprovechar el fenómeno, por ello, se propusieron reinventar la franquicia en un nuevo juego que usase las ideas y mecánicas de Pokémon GO, creando así el que sería el primer juego de la saga principal para una consola de sobremesa, Nintendo Switch.52​ Pokémon Let's Go, Pikachu! y Let's Go, Eevee! salieron finalmente a la venta el 16 de noviembre de 2018, estos juegos, según su director, Junichi Masuda, son los primeros de una rama más casual que pretende atraer nuevos jugadores e introducirlos en la saga
+      Fue también durante esta generación en la que, en verano de 2016, ocurrió
+      el boom ocasionado por la salida de la famosa aplicación de móviles
+      Pokémon GO, hecho que propulsó las ventas de Pokémon Sol y Luna, que
+      fueron los juegos que más rápido vendieron sus copias en la vida de la
+      consola Nintendo 3DS en su primera semana y recaudaron más de 15 millones
+      de ventas en tan solo su primer año (dato que a Pokémon X e Y, primer
+      juego de la anterior generación, le costó casi 4 años alcanzar). Game
+      Freak, vio una gran oportunidad en esto y decidió aprovechar el fenómeno,
+      por ello, se propusieron reinventar la franquicia en un nuevo juego que
+      usase las ideas y mecánicas de Pokémon GO, creando así el que sería el
+      primer juego de la saga principal para una consola de sobremesa, Nintendo
+      Switch.52​ Pokémon Let's Go, Pikachu! y Let's Go, Eevee! salieron
+      finalmente a la venta el 16 de noviembre de 2018, estos juegos, según su
+      director, Junichi Masuda, son los primeros de una rama más casual que
+      pretende atraer nuevos jugadores e introducirlos en la saga
     </p>
-<h3>Lista de Curiosidades</h3>
- <ul>
-    <li>Esta generación incorpora, 88 nuevas especies de Pokémon (desde Rowlet hasta Melmetal), haciendo un total de 809.</li>
-    <li>Incorporan 106 movimientos nuevos con un total de 742.</li>
-    <li>Incorporan 44 habilidades nuevas con un total de 233.</li>
-    <li>En Pokémon Sol y Luna, Ultrasol y Ultraluna la Pokédex es un Rotom. Además no hay gimnasios, hay pruebas insulares.</li>
-    <li>Introducen las primeras Formas regionales que se adaptan al clima de Alola.</li>
-    <li>Nueva modalidad de los Pokémon, los Ultraentes.</li>
-    <li>Introducen los Movimientos Z.</li>
-    <li>Introducen los Pokémon Dominantes, Pokémon con tamaño y fuerza superior al resto.</li>
-    <li>Puedes navegar por el Ultraespacio y visitar otras dimensiones del mundo Pokémon (en Pokémon Ultrasol y Ultraluna).</li>
-    <li>RotomDex analiza los Pokémon para registrarlos en la Pokédex durante los combates (en Pokémon Ultrasol y Ultraluna).</li>
-    <li>En esta generación los Pokémon salvajes pueden llamar a un aliado.</li>
-    <li>En esta generación las estadísticas están representadas en PC.</li>
-    <li>Remueven por completo las MO (Movimientos ocultos) para introducir las Pokémonturas en Alola, y las Técnicas Secretas en Kanto.</li>
-    <li>De lo que al anime se refiere, esta generación abarca del capítulo 951 al 1096 y está ambientado en Alola.</li>
-    <li>La vigésima temporada abarca del capítulo 951 al 993.</li>
-    <li>La vigésimo primera temporada abarca del capítulo 994 al 1042.</li>
-    <li>La vigésimo segunda temporada abarca del capítulo 1053 al 1096.</li>
-    <li>Las películas vigésima, vigésimo primera y vigésimo segunda pertenecen a esta generación.</li>
-    <li>Un total de 923 objetos (En Pokémon Sol y Luna).</li>
-    <li>Un total de 959 objetos (En Pokémon Ultrasol y Ultraluna).</li>
-    <li>Un total de 70 objetos (En Let's Go!).</li>
-    <li>La mochila del juego puede almacenar todos los objetos del videojuego, además cuenta con un compartimento exclusivo para los Cristales Z y para "Poderes Rotom" (en Pokémon Ultrasol y Ultraluna).</li>
-    <li>Los combates no son aleatorios (Solo en Let's Go!).</li>
- </ul>
-</body>
+    <h3>Lista de Curiosidades</h3>
+    <ul>
+      <li>
+        Esta generación incorpora, 88 nuevas especies de Pokémon (desde Rowlet
+        hasta Melmetal), haciendo un total de 809.
+      </li>
+      <li>Incorporan 106 movimientos nuevos con un total de 742.</li>
+      <li>Incorporan 44 habilidades nuevas con un total de 233.</li>
+      <li>
+        En Pokémon Sol y Luna, Ultrasol y Ultraluna la Pokédex es un Rotom.
+        Además no hay gimnasios, hay pruebas insulares.
+      </li>
+      <li>
+        Introducen las primeras Formas regionales que se adaptan al clima de
+        Alola.
+      </li>
+      <li>Nueva modalidad de los Pokémon, los Ultraentes.</li>
+      <li>Introducen los Movimientos Z.</li>
+      <li>
+        Introducen los Pokémon Dominantes, Pokémon con tamaño y fuerza superior
+        al resto.
+      </li>
+      <li>
+        Puedes navegar por el Ultraespacio y visitar otras dimensiones del mundo
+        Pokémon (en Pokémon Ultrasol y Ultraluna).
+      </li>
+      <li>
+        RotomDex analiza los Pokémon para registrarlos en la Pokédex durante los
+        combates (en Pokémon Ultrasol y Ultraluna).
+      </li>
+      <li>
+        En esta generación los Pokémon salvajes pueden llamar a un aliado.
+      </li>
+      <li>En esta generación las estadísticas están representadas en PC.</li>
+      <li>
+        Remueven por completo las MO (Movimientos ocultos) para introducir las
+        Pokémonturas en Alola, y las Técnicas Secretas en Kanto.
+      </li>
+      <li>
+        De lo que al anime se refiere, esta generación abarca del capítulo 951
+        al 1096 y está ambientado en Alola.
+      </li>
+      <li>La vigésima temporada abarca del capítulo 951 al 993.</li>
+      <li>La vigésimo primera temporada abarca del capítulo 994 al 1042.</li>
+      <li>La vigésimo segunda temporada abarca del capítulo 1053 al 1096.</li>
+      <li>
+        Las películas vigésima, vigésimo primera y vigésimo segunda pertenecen a
+        esta generación.
+      </li>
+      <li>Un total de 923 objetos (En Pokémon Sol y Luna).</li>
+      <li>Un total de 959 objetos (En Pokémon Ultrasol y Ultraluna).</li>
+      <li>Un total de 70 objetos (En Let's Go!).</li>
+      <li>
+        La mochila del juego puede almacenar todos los objetos del videojuego,
+        además cuenta con un compartimento exclusivo para los Cristales Z y para
+        "Poderes Rotom" (en Pokémon Ultrasol y Ultraluna).
+      </li>
+      <li>Los combates no son aleatorios (Solo en Let's Go!).</li>
+    </ul>
+  </body>
 </html>
