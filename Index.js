@@ -1,0 +1,1 @@
+alert("Hola,en esta pagina descubriras curiosidades sobre pokemon e Inazuma Eleven asi como sus videojuegos y s>
